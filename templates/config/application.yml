@@ -1,0 +1,12 @@
+development: &non_production_settings 
+    host: 0.0.0.0:3000
+    site_name: "My Site"
+
+test: 
+  <<: *non_production_settings 
+
+production: 
+    host: example.org
+    site_name: "My Site"
+    # your analytics id code here (e.g. UA-11111111-11)
+    google_analytics_id: ""

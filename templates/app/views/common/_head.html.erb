@@ -1,0 +1,14 @@
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="<%= yield(:meta_description).to_s.strip -%>"/>
+<meta name="keywords" content="<%= yield(:meta_keywords).to_s.strip -%>"/>
+<title><%= page_title_or_header -%></title>
+<%= stylesheet_link_tag 'reset', 'main', :media => "screen", :cache => "screen" %>
+<%= stylesheet_link_tag 'print', :media => "print" %>
+<!--[if IE]>
+<style type="text/css">
+	.clearfix {display:inline-block;}
+	* html .clearfix {height: 1%;}
+</style>
+<![endif]-->
+<%= javascript_include_tag :all, :cache => true %>

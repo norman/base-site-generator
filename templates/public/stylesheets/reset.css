@@ -1,0 +1,10 @@
+:link,:visited { text-decoration:none }
+ul,ol { list-style:none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; font-weight: normal; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset
+{ margin:0; padding:0; border: none; }
+input { margin: 0; padding: 0;}
+a { outline-style:none; }
+a img,:link img,:visited img { border:none }
+address { font-style:normal }
+br, div.clearer {float: none; clear: both;}

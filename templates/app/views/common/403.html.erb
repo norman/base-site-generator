@@ -1,0 +1,11 @@
+<% page_header "Permission Error" %>
+<% content_for :main do %>
+	<p>
+		The link that you just clicked, or the form you submitted, has led you to
+    a part of the site that we didn't intend for you to see. For the
+    technically minded, this is a "403" error.
+	</p>
+<% end %>
+<% content_for :side do %>
+	<%= link_to_function "Go back", "history.go(-1)", :class => "back" %>
+<% end %>

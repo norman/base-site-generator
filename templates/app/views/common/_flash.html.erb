@@ -1,0 +1,10 @@
+<div id="flash">
+	<% unless flash.empty? -%>
+		<%= content_tag :div, flash[:notice], :id => "flash_message", :class => "notice" if flash[:notice] -%>
+		<%= content_tag :div, flash[:warning], :id => "flash_message", :class => "warning" if flash[:warning] -%>
+		<%= content_tag :div, flash[:error], :id => "flash_message", :class => "error" if flash[:error] -%>
+		<script type="text/javascript">
+			<%= visual_effect :highlight, "flash" %>
+		</script>
+	<% end -%>
+</div>

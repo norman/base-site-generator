@@ -1,0 +1,13 @@
+<ul id="navigation">
+	<%# if !logged_in? %>
+		<li><%= link_to_unless_current 'Home', "#" %></li>
+		<li><%= link_to_unless_current 'Join', "#" %></li>
+		<li><%= link_to_unless_current 'Members', "#" %></li>
+		<li><%= link_to_unless_current 'Login', "#" %></li>
+	<%# else -%>
+		<!-- <li><%= link_to_unless_current 'Home', "#" %></li>
+		<li><%= link_to_unless_current 'Profile', "#" %></li>
+		<li><%= link_to_unless_current 'Members', "#" %></li>
+		<li><%= link_to 'Logout', "#" %> -->
+	<%# end -%>
+</ul>

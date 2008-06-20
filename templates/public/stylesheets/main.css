@@ -1,0 +1,45 @@
+/* base html defaults */
+html, body { font-family: "arial", sans-serif; line-height: 1.2em; 
+	background-color: #f0f0f0; font-size: 95% }
+hr { display: none;}
+p { margin: 0 0 10px 0;}
+ul { margin: 0 0 20px 0;}
+h1, h2, h3, h4, h5, h6 { font-family: "lucida grande", trebuchet, sans-serif; font-weight: bold; margin: 0 0 10px 0;}
+h2 { font-size: 120%; margin: 0 0 20px 0; }
+h3 { font-size: 100%; margin: 0 0 10px; }
+fieldset { margin-bottom: 20px;}
+legend { padding-bottom: 10px; }
+blockquote { width: 50%; margin: auto; font-style: italic; }
+h1 { position: absolute; top: 20px; font-size: 100%; font-family: "lucida grande", sans-serif;
+	padding: 0 0 0 1px;}
+img.avatar { padding: 2px; border: 1px #c0c0c0 double; }
+a img, h2 img { vertical-align: middle; }
+textarea { font-family: arial, sans-serif;}
+h1 a, h1 a:visited, #navigation a { color: blue; text-decoration: none;}
+h1 a, a.app, #navigation a:visited { color: blue; text-decoration: none; }
+input[type=text], input[type=password], textarea { font-size: 18px; 
+	border: 1px #d0d0d0 inset; }
+select { border: 1px #d0d0d0 inset; }
+
+/* core utilities */
+.clearfix:after { content: ".";  display: block;  height: 0;  clear: both; 
+	visibility: hidden; }
+
+/* core layout */
+#flash_message { margin-bottom: 10px;}
+#all_content_wrapper { width: 800px; margin: auto; position: relative; padding-top: 50px; }
+#page_content_wrapper { border: 1px #f0f0f0 solid; background-color: #fff; padding: 10px 0 10px 0;}
+#main_content_wrapper { width: 577px; margin: 0 0 0 0; padding: 0 10px 10px 10px; float: left; }
+#side_content_wrapper { width: 170px; margin: 0; padding: 0 10px 0 10px; float: left; }
+ul#navigation { padding: 0 1px 0 0; }
+#navigation li { display: inline; margin-left: 5px; }
+#navigation { position: absolute; top: 20px; right: 0; height: 30px; line-height: 30px;}
+#footer { margin: 10px 0 0 0; color: #c0c0c0; font-style: italic; font-size: 90%;
+	text-align: right;}
+#footer a { color: #c0c0c0; }
+div.pagination { display: block; padding: 10px 0 10px 0; margin: 10px 0 10px 0; }	
+div.pagination { color: #707070; font-size: .9em; text-align: right; }
+#side_content_wrapper ul, #side_content_wrapper p { font-size: .9em;}
+#side_content_wrapper li { margin: 2px 0 2px 0; }
+
+.meta { color: #707070; font-size: small; }

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<% if content_exists :head %>
+			<% yield :head %>
+		<% else -%>
+			<%= render :partial => "common/head" %>
+		<% end -%>
+	</head>
+	<% content_tag :body, :class => body_class, :onload => @onload do %>
+		<% content_tag :div, :id => "wrapper" do %>
+			<% content_tag :div, :id => "all_content_wrapper" do %>
+				<%= content_tag :h1, link_to(APP_CONFIG["site_name"], root_url) %>
+				<% content_tag :div, :id => "page_content_wrapper", :class => "clearfix" do %>
+					<% content_tag :div, :id => "main_content_wrapper" do %>
+						<%= yield :page_header %>
+						<%= render :partial => "common/flash", :locals => {:flash => flash} %>
+						<%= yield :main %>
+					<% end %>
+					<% content_tag :div, :id => "side_content_wrapper" do %>
+						<%= yield :side %>
+					<% end %>
+				<% end -%>
+				<% if content_exists :navigation -%>
+					<%= yield :navigation %>
+				<% else -%>	
+					<%= render :partial => "common/navigation" %>
+				<% end -%>
+				<% if content_exists :footer -%>
+					<%= yield :footer %>
+				<% else -%>
+					<%= render :partial => "common/footer" %>
+				<% end -%>
+			<% end %>
+		<% end %>
+	<% end %>
+</html>
