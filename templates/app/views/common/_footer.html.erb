@@ -6,4 +6,4 @@
 		</p>
 	</noscript>
 </div>
-<%= render :partial => "common/analytics" if RAILS_ENV == "production" %>
+<%= render :partial => "common/analytics" if Rails.env.production? %>
