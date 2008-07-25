@@ -6,4 +6,6 @@
 		</p>
 	</noscript>
 </div>
-<%= render :partial => "common/analytics" if Rails.env.production? %>
+<% if "production" == Rails.env && !APP_CONFIG["google_analytics_id"].blank? -%>
+	<%= render :partial => "common/analytics"  %>
+<% end -%>
