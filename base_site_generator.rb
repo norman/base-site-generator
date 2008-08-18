@@ -5,6 +5,7 @@ class BaseSiteGenerator < Rails::Generator::Base
       m.file "config/application.yml", "config/application.yml"
       m.file "app/helpers/application_helper.rb", "app/helpers/application_helper.rb"
       m.directory "app/views/common"
+      m.file "app/views/layouts/main.html.erb", "app/views/layouts/main.html.erb"
       m.file "app/views/common/403.html.erb", "app/views/common/403.html.erb"
       m.file "app/views/common/404.html.erb", "app/views/common/404.html.erb"
       m.file "app/views/common/_analytics.html.erb", "app/views/common/_analytics.html.erb"
